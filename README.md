@@ -1,5 +1,7 @@
 # Rust for Pythonistas
 
+A Rust tutorial designed for Python developers
+
 ## Variables
 
 ### Declaring a variable
