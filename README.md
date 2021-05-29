@@ -51,7 +51,18 @@ let mut apple = "red";
 apple = "green";
 ```
 
+Although Rust variables are immutable by default, you are allowed to re-declare a variable. This concept is known as `shadowing`:
+
+```rust
+let x = 5;
+let x = 6;
+let x = x + 1;
+let x = "pineapple";  // the type of a variable can be changed when shadowing
+```
+
 ## Constants
+
+**Python**
 
 In Python there is isn't a formal definition of a constant. However, it is common to name variables in all-caps to hint to others that a variable shouldn't change:
 
@@ -60,11 +71,19 @@ In Python there is isn't a formal definition of a constant. However, it is commo
 RIGHT_ANGLE = 90
 ```
 
+**Rust**
+
 In Rust, constants can be declared with the `const` keyword:
 
+```rust
+const RIGHT_ANGLE: u16 = 90;
 ```
-const MAX_POINTS: u32 = 100_000;
-```
+
+`const` and variables that haven't been declared as mutable differ in these ways:
+
+- the type of a `const` must be annotated
+- `const`s can be declared in any scope, including the global scope, which makes them useful for values that many parts of code need to know about.
+- `const`s may be set only to a constant expression, not the result of a function call or any other value that could only be computed at runtime.
 
 ## Types
 
@@ -135,4 +154,3 @@ A `char` is 4 bytes and represents a Unicode Scalar Value.
 **Python**
 
 In Python, the built-in iterable types are `list`
-
