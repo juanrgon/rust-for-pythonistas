@@ -87,7 +87,7 @@ const RIGHT_ANGLE: u16 = 90;
 - `const`s can be declared in any scope, including the global scope, which makes them useful for values that many parts of code need to know about.
 - `const`s may be set only to a constant expression, not the result of a function call or any other value that could only be computed at runtime.
 
-## Types
+## Data Types
 
 ### Booleans
 
@@ -122,6 +122,8 @@ Which integer type you want to use is dependent on the problem that you are solv
 | u32      | 0                          | 4,294,967,295              |
 | u64      | 0                          | 18,446,744,073,709,551,615 |
 
+If you’re unsure which integer type you need, Rust’s defaults are generally good choices, and integer types default to i32: this type is generally the fastest, even on 64-bit systems.
+
 ### Floats
 
 **Python**
@@ -133,6 +135,12 @@ Like `int`s, floats can be arbitrarily large but are usually between 16 and 32 b
 **Rust**
 
 In rust floats are either `f32` for 32-bits, or `f64` for 64 bits.
+
+```rust
+let x = 2.0; // f64
+
+let y: f32 = 3.0; // f32
+```
 
 ### Strings
 
@@ -155,4 +163,4 @@ A `char` is 4 bytes and represents a Unicode Scalar Value.
 
 **Python**
 
-In Python, the built-in iterable types are `list`
+In Python, the built-in iterable types are `list` and `tuple`.
