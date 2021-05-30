@@ -2,18 +2,16 @@
 
 A Rust tutorial designed for Python developers
 
-- [Rust for Pythonistas](#rust-for-pythonistas)
-  - [Variables](#variables)
-    - [Declaring a variable](#declaring-a-variable)
-    - [Modifying a Variable](#modifying-a-variable)
-  - [Constants](#constants)
-  - [Data Types](#data-types)
-    - [Booleans](#booleans)
-    - [Scalars](#scalars)
-      - [Integers](#integers)
-      - [Floats](#floats)
-    - [Strings](#strings)
-    - [Iterables](#iterables)
+- [Variables](#variables)
+  - [Declaring a variable](#declaring-a-variable)
+  - [Modifying a Variable](#modifying-a-variable)
+- [Constants](#constants)
+- [Data Types](#data-types)
+  - [Booleans](#booleans)
+  - [Integers](#integers)
+  - [Floats](#floats)
+  - [Strings](#strings)
+  - [Iterables](#iterables)
 
 ## Variables
 
@@ -112,9 +110,8 @@ In Python there are only two `bool` types `True` and `False`.
 
 Similarly, in Rust, there are only two `bool` types: `true` and `false`.
 
-### Scalars
 
-#### Integers
+### Integers
 
 **Python**
 
@@ -143,7 +140,7 @@ Which integer type you want to use is dependent on the problem that you are solv
 
 If you’re unsure which integer type you need, Rust’s defaults are generally good choices, and integer types default to i32: this type is generally the fastest, even on 64-bit systems.
 
-#### Floats
+### Floats
 
 **Python**
 
