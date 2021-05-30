@@ -26,7 +26,7 @@ println!("The value of x is: {}", x);
 
 // You can also declare a variable, without an initial value.
 // If you do so, you have to specify the type of the variable.
-let x i32;
+let x: i32;
 ```
 
 ### Modifying a Variable
