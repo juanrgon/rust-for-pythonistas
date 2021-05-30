@@ -5,7 +5,7 @@ A Rust tutorial designed for Python developers
 - [Variables](#variables)
   - [Declaring a variable](#declaring-a-variable)
   - [Modifying a Variable](#modifying-a-variable)
-- [Constants](#constants)
+  - [Constants](#constants)
 - [Data Types](#data-types)
   - [Booleans](#booleans)
   - [Integers](#integers)
@@ -73,7 +73,7 @@ let x = x + 1;
 let x = "pineapple";  // the type of a variable can be changed when shadowing
 ```
 
-## Constants
+### Constants
 
 **Python**
 
