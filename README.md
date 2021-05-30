@@ -2,6 +2,19 @@
 
 A Rust tutorial designed for Python developers
 
+- [Rust for Pythonistas](#rust-for-pythonistas)
+  - [Variables](#variables)
+    - [Declaring a variable](#declaring-a-variable)
+    - [Modifying a Variable](#modifying-a-variable)
+  - [Constants](#constants)
+  - [Data Types](#data-types)
+    - [Booleans](#booleans)
+    - [Scalars](#scalars)
+      - [Integers](#integers)
+      - [Floats](#floats)
+    - [Strings](#strings)
+    - [Iterables](#iterables)
+
 ## Variables
 
 ### Declaring a variable
