@@ -50,13 +50,13 @@ fn main() {
 }
 ```
 
-compile your file
+compile your file:
 
 ```
-rustc hellow_world.rs
+rustc hello_world.rs
 ```
 
-then execute the generated executable
+then execute the generated executable:
 
 ```
 ./hello_world
