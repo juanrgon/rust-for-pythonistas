@@ -2,20 +2,74 @@
 
 A Rust tutorial designed for Python developers
 
-- [Variables](#variables)
-  - [Declaring a variable](#declaring-a-variable)
-  - [Modifying a Variable](#modifying-a-variable)
-  - [Constants](#constants)
-- [Data Types](#data-types)
-  - [Booleans](#booleans)
-  - [Integers](#integers)
-  - [Floats](#floats)
-  - [Strings](#strings)
-  - [Iterables](#iterables)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Hello World](#hello-world)
+- [Common Programming Concepts](#common-programming-concepts)
+  - [Variables](#variables)
+    - [Declaring a variable](#declaring-a-variable)
+    - [Modifying a Variable](#modifying-a-variable)
+    - [Constants](#constants)
+  - [Data Types](#data-types)
+    - [Booleans](#booleans)
+    - [Integers](#integers)
+    - [Floats](#floats)
+    - [Strings](#strings)
+    - [Lists and Tuples](#lists-and-tuples)
+  - [Functions](#functions)
 
-## Variables
+## Getting Started
 
-### Declaring a variable
+### Installation
+
+If you don't already have Rust installed, the instructions for installing are [here](https://www.rust-lang.org/tools/install).
+
+### Hello World
+
+**Python**
+
+To execute the "Hello World!" program in Python, you first create a file named `hello_world.py`, enter this text:
+
+```python
+print("Hello World")
+```
+
+then execute your Python file:
+
+```
+python hello_world.py
+```
+
+**Rust**
+
+You’ll start by making a directory to store your Rust code. It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a projects directory in your home directory and keeping all your projects there.
+
+Open a terminal and enter the following commands to make a projects directory and a directory for the “Hello, world!” project within the projects directory.
+
+To execute the "Hello World!" program in Rust, you first need to create a directory to store your Rust code. A project directory create a file named `hello_world.py`, enter this text:
+
+Open a terminal and enter the following commands to make a projects directory and a directory for the “Hello, world!” project within the projects directory.
+
+For Linux, macOS, and PowerShell on Windows, enter this:
+
+```
+$ mkdir ~/projects
+$ cd ~/projects
+$ mkdir hello_world
+$ cd hello_world
+```
+
+```rust
+fn main() {
+    println!("Hello world");
+}
+```
+
+## Common Programming Concepts
+
+### Variables
+
+#### Declaring a variable
 
 **Python**
 
@@ -40,7 +94,7 @@ println!("The value of x is: {}", x);
 let x: i32;
 ```
 
-### Modifying a Variable
+#### Modifying a Variable
 
 **Python**
 
@@ -73,7 +127,7 @@ let x = x + 1;
 let x = "pineapple";  // the type of a variable can be changed when shadowing
 ```
 
-### Constants
+#### Constants
 
 **Python**
 
@@ -98,9 +152,9 @@ const RIGHT_ANGLE: u16 = 90;
 - `const`s can be declared in any scope, including the global scope, which makes them useful for values that many parts of code need to know about.
 - `const`s may be set only to a constant expression, not the result of a function call or any other value that could only be computed at runtime.
 
-## Data Types
+### Data Types
 
-### Booleans
+#### Booleans
 
 **Python**
 
@@ -111,7 +165,7 @@ In Python there are only two `bool` types `True` and `False`.
 Similarly, in Rust, there are only two `bool` types: `true` and `false`.
 
 
-### Integers
+#### Integers
 
 **Python**
 
@@ -140,7 +194,7 @@ Which integer type you want to use is dependent on the problem that you are solv
 
 If you’re unsure which integer type you need, Rust’s defaults are generally good choices, and integer types default to i32: this type is generally the fastest, even on 64-bit systems.
 
-### Floats
+#### Floats
 
 **Python**
 
@@ -158,7 +212,7 @@ let x = 2.0; // f64
 let y: f32 = 3.0; // f32
 ```
 
-### Strings
+#### Strings
 
 **Python**
 
@@ -179,7 +233,7 @@ let y = "hello"; // a string
 
 A `char` is 4 bytes and represents a Unicode Scalar Value. `char`s are surrounded by single quotes, whereas `string`s are surrounded by double quotes.
 
-### Iterables
+#### Lists and Tuples
 
 **Python**
 
@@ -260,3 +314,6 @@ This table shows the differences between the different iterable types:
 | tuple  | yes          | yes                   | yes            |
 | array  | yes          | no                    | yes            |
 | vector | no           | no                    | yes            |
+
+### Functions
+
