@@ -42,27 +42,24 @@ python hello_world.py
 
 **Rust**
 
-You’ll start by making a directory to store your Rust code. It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a projects directory in your home directory and keeping all your projects there.
-
-Open a terminal and enter the following commands to make a projects directory and a directory for the “Hello, world!” project within the projects directory.
-
-To execute the "Hello World!" program in Rust, you first need to create a directory to store your Rust code. A project directory create a file named `hello_world.py`, enter this text:
-
-Open a terminal and enter the following commands to make a projects directory and a directory for the “Hello, world!” project within the projects directory.
-
-For Linux, macOS, and PowerShell on Windows, enter this:
-
-```
-$ mkdir ~/projects
-$ cd ~/projects
-$ mkdir hello_world
-$ cd hello_world
-```
+To execute the "Hello World!" program in Rust, you first create a file named `hello_world.rs`, enter this text:
 
 ```rust
 fn main() {
     println!("Hello world");
 }
+```
+
+compile your file
+
+```
+rustc hellow_world.rs
+```
+
+then execute the generated executable
+
+```
+./hello_world
 ```
 
 ## Common Programming Concepts
