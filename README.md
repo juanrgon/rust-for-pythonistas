@@ -81,7 +81,7 @@ x = 1
 In Rust, you must use the `let` keyword to declare a new variable:
 
 ```rust
-// You can declare a variable with an initial value. When doing
+// You can declare a variable with an initial value.
 let x = 1;
 
 println!("The value of x is: {}", x);
