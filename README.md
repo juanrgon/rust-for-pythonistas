@@ -46,7 +46,7 @@ To execute the "Hello World!" program in Rust, you first create a file named `he
 
 ```rust
 fn main() {
-    println!("Hello world");
+    println!("Hello world!");
 }
 ```
 
@@ -61,6 +61,15 @@ then execute the generated executable:
 ```
 ./hello_world
 ```
+
+Alternatively, you can use `cargo` to create a new rust project:
+
+
+```
+cargo new helloworld
+```
+
+which you can then run with `cargo run`. This should print `Hello, world!` to the console.
 
 ## Common Programming Concepts
 
