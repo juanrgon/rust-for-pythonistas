@@ -273,7 +273,7 @@ let (x, y, z) = t;
 // access an element of a tuple
 let a = t.3;
 
-// declare a tuple without intializing
+// declare a tuple without intializing it
 let s: (i32, f64, u8);
 ```
 
