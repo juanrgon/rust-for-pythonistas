@@ -267,7 +267,7 @@ Rust has three iterable types: `tuple`s, `array`s, `vector`s. All three are can 
 ```rust
 let t = (1, 2.0, "a");
 
-// you can destructure a list/tuple
+// you can destructure a tuple
 let (x, y, z) = t;
 
 // access an element of a tuple
