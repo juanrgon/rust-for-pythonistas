@@ -315,11 +315,11 @@ let vec: Vec<i32> = vec![];
 
 This table shows the differences between the different iterable types:
 
-| type   | fixed length | allows multiple types | can be mutable |
-|--------|--------------|-----------------------|----------------|
-| tuple  | yes          | yes                   | yes            |
-| array  | yes          | no                    | yes            |
-| vector | no           | no                    | yes            |
+| type   | fixed length | allows multiple types |
+|--------|--------------|-----------------------|
+| tuple  | yes          | yes                   |
+| array  | yes          | no                    |
+| vector | no           | no                    |
 
 ### Functions
 
